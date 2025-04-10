@@ -1,0 +1,19 @@
+{
+  "name": "arboretum-website",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start": "yarn workspace backend start & yarn workspace frontend start",
+    "dev": "yarn workspace backend dev & yarn workspace frontend start",
+    "build": "yarn workspace frontend build && yarn workspace backend build",
+    "test": "yarn workspaces run test"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/cforoudian/arboretum-website.git",
+  "author": "Cyrus Foroudian <cyrus.foroudian@gmail.com>",
+  "license": "MIT"
+}
